@@ -1,8 +1,16 @@
-<% @places.each do |place| %>
+<% @place.each do |place| %>
   <div class="booyah-box col-10 offset-1">
     <h1><%= place.name %></h1>
 
     <%= will_paginate @place %>
+
+    <% if @place.previous_page %>
+  <%= link_to "< Previous", params.merge(page: @place.previous_page) %>
+<% end %>
+Page <%= @place.current_page %> of <%= @place.total_pages %>
+<% if @place.next_page %>
+  <%= link_to "Next >", params.merge(page: @place.next_page) %>
+<% end %>
 
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
