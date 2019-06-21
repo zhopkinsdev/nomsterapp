@@ -1,4 +1,4 @@
-<h1>Welcome to the show page</h1>
+<h1>Welcome to the Show Page</h1>
 
 <div class="booyah-box col-10 offset-1">
 <h1><%= @place.name %></h1>
@@ -7,7 +7,10 @@
 <p><%= @place.description %></p>
 
 <div class="float-right">
+  <% if current_user && current_user == @place.user %>
     <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
+    <% end %>
+    <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
   </div>
-  
+
 </div>
