@@ -5,5 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
          
   has_many :places
+  validates :email, confirmation: true
+  validates :email_confirmation, presence: true
+  validates :email, confirmation: { case_sensitive: false }
 
 end
