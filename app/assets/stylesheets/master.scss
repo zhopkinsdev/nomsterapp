@@ -1,6 +1,6 @@
 @import "bootstrap";
 @import "font-awesome";
-@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,400i,700,700i|Poiret+One&display=swap&subset=cyrillic,latin-ext');
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   background: image_url('sakura.png');
   color: #C68E17;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: 'Josefin Slab', serif;
 }
 
 .navbar {

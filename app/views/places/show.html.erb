@@ -15,19 +15,16 @@
     }
   </style>
 
-  <style>
-    #map {
-      height: 300px;
-    }
-  </style>
-  
+
   </head>
   <body>
-  <div id="map"></div>
+
+<% if @place.latitude.present? && @place.longitude.present? %>
+
   <script>
 
     function initMap() {
-      var myLatLng = {lat: -25.363, lng: 131.044};
+      var myLatLng = {lat: <%= @place.latitude %>, lng: <%= @place.longitude %>};
 
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 4,
@@ -43,9 +40,13 @@
   </script>
 
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKgHZfQwN8Ys2Z0MaC-YE4wzlzqZhys-g&callback=initMap">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaS45r5rt8njLkpgEXQXCAmnT_xRaddNg&callback=initMap">
   </script>
 
+<div id="map"></div>
+ <% end %>
+
+ <br />
 
 
 <div class="float-right">
