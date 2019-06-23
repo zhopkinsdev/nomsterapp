@@ -1,4 +1,4 @@
 Geocoder.configure(
   lookup: :google,
-  api_key: ENV['AIzaSyASICaHb7slXnLA-WbRtDaxO-e3iU-AkwM'],
+  api_key: ENV['AIzaSyBKgHZfQwN8Ys2Z0MaC-YE4wzlzqZhys-g'],
 )
