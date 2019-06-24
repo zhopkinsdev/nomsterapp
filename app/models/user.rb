@@ -8,5 +8,6 @@ class User < ApplicationRecord
   validates :email, confirmation: true
   validates :email_confirmation, presence: true
   validates :email, confirmation: { case_sensitive: false }
+  has_many :comments
 
 end
