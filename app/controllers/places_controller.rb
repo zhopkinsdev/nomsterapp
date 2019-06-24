@@ -10,9 +10,9 @@ class PlacesController < ApplicationController
   end
 
   def create
-    @place = current_user.places.create(place_params)
-  if @place.valid?
-    redirect_to root_path
+    @place = Place.find(params[:place_id])
+    @place.comments.create(comment_params.merge(user: current_user))
+     redirect_to place_path(@place)
   else
     render :new, status: :unprocessable_entity
   end
