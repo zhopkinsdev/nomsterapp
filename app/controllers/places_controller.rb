@@ -62,4 +62,3 @@ end
     params.require(:place).permit(:name, :description, :address)
   end
 
-end
