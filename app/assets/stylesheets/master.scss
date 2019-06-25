@@ -8,11 +8,10 @@
   box-shadow: 1px 1px 2px 0 #d0d0d0;
   background: #fff;
   border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin-top: 10px;
   margin-bottom: 15px;
   padding: 20px;
-  border-color: #C68E17;
+  border-color: #C68E17,#A76B00,#894D00;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,4 +50,11 @@ body {
 
 .clear {
     clear: both;
+}
+
+.btn {
+  background: image_url('food.png');
+  color: #5CB3FF;
+  font-family: 'Josefin Slab', serif;
+  border-color: #C68E17;
 }
