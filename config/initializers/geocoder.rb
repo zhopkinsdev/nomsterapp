@@ -1,5 +1,5 @@
 Geocoder.configure(
   lookup: :google,
-  api_key: ENV['AIzaSyC7uXV6Kmnx2LGuABx40gNH0uXfXbneWFE'],
+  api_key: ENV['GEOCODER_API_KEY'],
   timeout: 15
 )
