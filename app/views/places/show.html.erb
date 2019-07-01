@@ -125,15 +125,14 @@
           <% end %>
           <%= comment.message %>
           <small><%= comment.user.email %></small>
+          <%= link_to 'Destroy', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
           </blockquote>
 
-          <div class="photo">
             <% @place.photos.each do |photo| %>
-            <%= image_tag photo.picture.url %>
+            %= image_tag photo.picture, class: 'photo' %>
             <%= photo.caption %>
             <% end %>
           </div>
-
         </div>
         
     <% end %>

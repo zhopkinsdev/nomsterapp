@@ -46,6 +46,8 @@ class PlacesController < ApplicationController
     end
     @place.destroy
     redirect_to root_path
+    @comment = Comment.find(params[:id])
+    @comment.destroy
   end
 
   private
