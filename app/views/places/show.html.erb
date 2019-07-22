@@ -89,7 +89,7 @@
           <span aria-hidden="true">×</span>
         </button>
         <h4 class="modal-title" id="mycommentModalLabel">Add a comment</h4>
-      <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
+      <%= simple_form_for [@place, @comment] do |f| %>
         <div class="modal-body">
           <%= f.input :message %>
           <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
