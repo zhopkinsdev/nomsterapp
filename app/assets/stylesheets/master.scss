@@ -9,16 +9,23 @@
   background: #fff;
   border: 1px solid #ccc;
   margin-top: 10px;
-  margin-bottom: 15px;
-  padding: 20px;
+  margin-bottom: 17px;
+  padding: 22px;
   border-color: #C68E17,#A76B00,#894D00;
 }
 
-h1, h2, h4, h5, h6 {
+ h2, h4, h5, h6 {
   margin:0;
   padding:0;
   font-family: 'Poiret One', cursive;
   color: #C68E17;
+}
+
+h1 {
+  margin:0;
+  padding:0;
+  font-family: 'Poiret One', cursive;
+  color: #894D00;
 }
 
 h3 {
@@ -28,24 +35,29 @@ h3 {
 }
 
 body {
-  background: image_url('sakura.png');
+  background: image_url('food.png');
   color: #C68E17;
   font-family: 'Josefin Slab', serif;
 }
 
 .navbar {
-  background: image_url('food.png');
+  background: image_url('wood_pattern.png');
   box-shadow: 0px 1px 3px #2a2a2a;
   margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #5CB3FF;
+  color: #7D0552;
   font-family: 'Poiret One', cursive;
  }
 
+.nav-link  {
+  color: #894D00;
+}
+
+ 
 .invalid-feedback {
-  color: #5CB3FF;
+  color: #7D0552;
   background: image_url('food.png');
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
@@ -60,8 +72,8 @@ body {
 }
 
 .btn {
-  background: #FBBBB9;
-  color: #5CB3FF;
+  background: image_url('wood_pattern.png');
+  color: #7D0552;
   font-family: 'Josefin Slab', serif;
   border-color: #C68E17;
 }
@@ -110,4 +122,6 @@ blockquote p {
 .carousel {
   box-shadow: 0px 3px 8px #2a2a2a;
 }
+
+
 
