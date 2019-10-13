@@ -35,25 +35,23 @@ h3 {
 }
 
 body {
-  background: image_url('food.png');
+  background: image_url('wood_pattern.png');
   color: #C68E17;
   font-family: 'Josefin Slab', serif;
 }
 
 .navbar {
-  background: image_url('wood_pattern.png');
+  background: image_url('woodnav.jpg');
   box-shadow: 0px 1px 3px #2a2a2a;
   margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #7D0552;
+  color: white;
   font-family: 'Poiret One', cursive;
  }
 
-.nav-link  {
-  color: #894D00;
-}
+
 
  
 .invalid-feedback {
